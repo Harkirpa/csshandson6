@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Merriweather',serif;
+}
+body{
+    background-image: url(./shara\ desert.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.container-1{
+    display:flex;
+    justify-content: space-between;
+  
+  
+}
+.container-2{
+    display:flex;
+   margin-top: 40px;
+   column-gap: 20%;
+}
+.navbar{
+    display: flex;
+    padding: 10px;
+    margin-right:90px;
+}
+
+.logo{
+    margin-left:90px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    
+    height:500px;
+    row-gap: 20px;
+    column-gap: 40px;
+    width: 90%;
+}
+.sahara{
+color: white;
+margin-left: 40px;
+
+}
+h1{
+    font-size: 85px;
+    font-weight: bolder;
+}
+.explore{
+    border-radius: 39px;
+    background-color: white;
+    color:black;
+   
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    padding: 15px 32px;
+}
+
+ul li{
+    list-style: none;
+    margin: 0px 10px;
+    display: inline-block;
+    padding: 0px 10px;
+    color:white;
+}
+.box{
+    transition: 0.5s;
+    cursor: pointer;
+    color:white
+}
+.box:hover{
+    transform: translateY(-15px);
+}
+
+@media screen and (min-width: 280px) and(max-width:500px)
+{
+    .grid{
+        grid-template-columns: auto;
+        background-repeat: repeat;
+    }
+    ul li{
+        display:block;
+    }
+    .container-2{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .box{
+        height: 200px;
+    }
+    .sahara{
+       margin-top: 10px;
+       font-size: small; 
+    }
+    p{
+        font-size: medium;
+    }
+
+}
+/*Tablet view*/
+@media screen and(min-width:500px) and (max-width:900px){
+    .grid{
+       
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .container-1  {
+        flex-wrap: wrap;
+            gap: 0px;
+        }
+    .container-2 {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+       }
+    .sahara{
+        font-size:small;
+    }
+    .logo{
+       width: 30%;        
+    }
+   
+    ul li{
+        margin: 0px 20px;
+    }
+    .navbar{
+        width: 100vw;
+    }  
+}
+.box1{
+    background-image: url(./pic-1.png);
+    border-radius: 10%;
+    background-size: cover;
+    text-align: center;
+
+}
+
+.box2{
+    background-image: url(./pic-2.png);
+    border-radius: 10%;
+    background-size: cover;
+    text-align: center;
+   
+}
+.box3{
+    background-image: url(./pic-3.png);
+    border-radius: 10%;
+    background-size: cover;
+    text-align: center;
+}
+.box4{
+    background-image: url(./pic-4.png);
+    border-radius: 10%;
+    background-size: cover;
+    text-align: center;
+}
+p{
+    font-size: small;
+}

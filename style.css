@@ -78,12 +78,17 @@ ul li{
     .grid{
        
         display: flex;
-        justify-content: space-around;
+       
         flex-wrap: wrap;
-    }
+    } 
+    .container-2 {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+       }
    
        .sahara{
-        margin-top: 6px;
+        margin-top: -10px;
         font-size: small; 
      }
      p{
@@ -108,15 +113,11 @@ ul li{
     ul li{
         margin: 0px 20px;
     }
-    .container-1  {
-        flex-wrap: wrap;
-            gap: 0px;
-        }
     .container-2 {
         flex-direction: column;
         align-items: center;
         row-gap: 20px;
-    }
+       }
 
 .box{
     height: 200px;
@@ -131,6 +132,10 @@ p{
     font-size: medium;
 }
   }
+
+
+
+
 .box1{
     background-image: url(./pic-1.png);
     border-radius: 10%;

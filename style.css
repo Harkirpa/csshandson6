@@ -73,40 +73,40 @@ ul li{
     transform: translateY(-15px);
 }
 
-@media screen and (min-width: 280px) and(max-width:500px)
+@media screen and (min-width: 280px) and (max-width:500px)
 {
-    .grid{
-        grid-template-columns: auto;
-        background-repeat: repeat;
-    }
-    ul li{
-        display:block;
-    }
-    .container-2{
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    
-    .box{
-        height: 200px;
-    }
-    .sahara{
-       margin-top: 10px;
-       font-size: small; 
-    }
-    p{
-        font-size: medium;
-    }
-
-}
-/*Tablet view*/
-@media screen and(min-width:500px) and (max-width:900px){
     .grid{
        
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+    }
+   
+       .sahara{
+        margin-top: 6px;
+        font-size: small; 
+     }
+     p{
+         font-size: medium;
+     }
+    .logo{
+       width: 30%;        
+    }
+   
+    ul li{
+      display:inline-block;
+    }
+    
+   
+}
+/*Tablet view*/
+@media screen and (min-width:500px) and (max-width:1000px){
+    .grid{
+        grid-template-columns: auto;
+        background-repeat: repeat; 
+    }
+    ul li{
+        margin: 0px 20px;
     }
     .container-1  {
         flex-wrap: wrap;
@@ -116,21 +116,21 @@ ul li{
         flex-direction: column;
         align-items: center;
         row-gap: 20px;
-       }
-    .sahara{
-        font-size:small;
     }
-    .logo{
-       width: 30%;        
-    }
-   
-    ul li{
-        margin: 0px 20px;
-    }
-    .navbar{
-        width: 100vw;
-    }  
+
+.box{
+    height: 200px;
+    background-position: center;
+    background-size: cover;
 }
+.sahara{
+   margin-top: -88px;
+   font-size: small; 
+}
+p{
+    font-size: medium;
+}
+  }
 .box1{
     background-image: url(./pic-1.png);
     border-radius: 10%;

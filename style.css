@@ -99,9 +99,7 @@ ul li{
     .logo{
        width: 30%;        
     }
-    div p{
-        margin-left:20px;
-    }
+   
    
     ul li{
       display:inline-block;
@@ -109,11 +107,14 @@ ul li{
     body{
         background-repeat: repeat;
     }
-    .box1{
-        text-align: left;
-    }
+   .box{
+    width:150px;
+    height:150px;
+   display:block;
+   margin:auto;
     
    
+   }
 }
 /*Tablet view*/
 @media screen and (min-width:500px) and (max-width:1000px){
